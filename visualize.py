@@ -28,7 +28,6 @@ def process_data(data: List[Dict[str, Any]]) -> List[Tuple[str, int]]:
     return sorted(host_counts.items(), key=lambda item: item[1], reverse=True)
 
 def create_plot(sorted_subnets: List[Tuple[str, int]]):
-    """Creates, saves, and displays the bar chart."""
     if not sorted_subnets:
         print("No subnet data to plot.")
         return
